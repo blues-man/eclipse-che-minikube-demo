@@ -134,8 +134,43 @@ Register and login
 
 ### Demo
 
-Demo has been done on Hetzner server exposing Minikube outside via NGINX Proxy with Websocket support.
+Demo has been done on Hetzner server exposing Minikube outside via [NGINX Proxy](#NGINX_Conf) with Websocket support.
 
 Use this [Repo](https://github.com/blues-man/react-redux-realworld-example-app) for Fabric demo
 
 [![Contribute](https://raw.githubusercontent.com/blues-man/cloud-native-workshop/demo/factory-contribute.svg)](http://che-my-eclipse-che.148.251.9.136.nip.io/factory?url=https://github.com/blues-man/react-redux-realworld-example-app/)
+
+
+#### NGINX Conf
+
+```
+    server {
+        listen       80 default_server;
+        listen       [::]:80 default_server;
+        server_name  che-my-eclipse-che.148.251.9.136.nip.io;
+        root         /usr/share/nginx/html;
+
+        include /etc/nginx/default.d/*.conf;
+
+        location / {
+                proxy_redirect off;
+                proxy_buffering off;
+                proxy_set_header        Host            $host;
+                proxy_set_header        X-Real-IP       $remote_addr;
+                proxy_set_header        X-Forwarded-For $proxy_add_x_forwarded_for;
+                proxy_pass      http://192.168.39.40/;
+                proxy_http_version 1.1;
+                proxy_set_header Upgrade $http_upgrade;
+                proxy_set_header Connection "Upgrade";
+
+        }
+
+        error_page 404 /404.html;
+            location = /40x.html {
+        }
+
+        error_page 500 502 503 504 /50x.html;
+            location = /50x.html {
+        }
+    }
+```
