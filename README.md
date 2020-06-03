@@ -134,7 +134,7 @@ Register and login
 
 ### Demo
 
-Demo has been done on Hetzner server exposing Minikube outside via [NGINX Proxy](#NGINX_Conf) with Websocket support.
+Demo has been done on Hetzner server exposing Minikube outside via [NGINX Proxy](#nginx-conf) with Websocket support.
 
 Use this [Repo](https://github.com/blues-man/react-redux-realworld-example-app) for Fabric demo
 
@@ -158,7 +158,7 @@ Use this [Repo](https://github.com/blues-man/react-redux-realworld-example-app) 
                 proxy_set_header        Host            $host;
                 proxy_set_header        X-Real-IP       $remote_addr;
                 proxy_set_header        X-Forwarded-For $proxy_add_x_forwarded_for;
-                proxy_pass      http://192.168.39.40/;
+                proxy_pass              http://192.168.39.40/;
                 proxy_http_version 1.1;
                 proxy_set_header Upgrade $http_upgrade;
                 proxy_set_header Connection "Upgrade";
