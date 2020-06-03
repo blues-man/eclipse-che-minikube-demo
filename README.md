@@ -126,7 +126,8 @@ Register and login
 ![Login](https://miro.medium.com/max/968/0*XMW3jIOgG9Vxmf5s.)
 
 
-### Demo Env
+### Demo!
 
-Use this [Workspace devfile](https://github.com/blues-man/react-redux-realworld-example-app) for Fabric demo
+Use this [Repo](https://github.com/blues-man/react-redux-realworld-example-app) for Fabric demo
 
+[![Contribute](https://raw.githubusercontent.com/blues-man/cloud-native-workshop/demo/factory-contribute.svg)](http://che-my-eclipse-che.148.251.9.136.nip.io/factory?url=https://github.com/blues-man/react-redux-realworld-example-app/)
