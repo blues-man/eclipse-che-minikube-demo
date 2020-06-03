@@ -2,10 +2,20 @@
 
 This demo is about [Eclipse Che](https://www.eclipse.org/che/) on [Kubernetes](https://kubernetes.io) and it is part of [Kubernetes-IT](https://t.me/kubernetes_it) Telegram Community weekly events of [June 3 2020](https://www.eventbrite.it/e/biglietti-kubernetes-it-sviluppare-su-kubernetes-con-eclipse-che-107109477330#)
 
-A Diagram explaining demo flow:
+Demo flow:
+
+* We started from React Workspace
+* Customized the workspace forking the [React Realworld example app](https://github.com/gothinkster/react-redux-realworld-example-app)
+* * Created a Devfile in [forked repo](https://github.com/blues-man/react-redux-realworld-example-app)
+* * Created a [Dockerfile](https://github.com/blues-man/react-redux-realworld-example-app/blob/master/Dockerfile) for building the "production" image
+* * Created [K8S resources](https://github.com/blues-man/react-redux-realworld-example-app/tree/master/k8s) for "production" deployment
+* Used Factory to start a new workspace from our changes
+* Made changes to the code, tested locally with embedded browser into IDE
+* Pushed changes on Quay.io Registry which triggered a new build of container image from Dockerfile
+* Deployed k8s resources on Minikube
+
 
 ![Diagram](Eclipse_Che_Demo_Diagram.png)
-
 
 
 Slides are available [here](https://github.com/blues-man/eclipse-che-minikube-demo/blob/master/Eclipse_Che_Rocks.pdf)
