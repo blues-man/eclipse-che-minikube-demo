@@ -140,6 +140,24 @@ Use this [Repo](https://github.com/blues-man/react-redux-realworld-example-app) 
 
 [![Contribute](https://raw.githubusercontent.com/blues-man/cloud-native-workshop/demo/factory-contribute.svg)](http://che-my-eclipse-che.148.251.9.136.nip.io/factory?url=https://github.com/blues-man/react-redux-realworld-example-app/)
 
+#### Deploy app on Minikube
+
+Once app has been modified and tested on Eclipse Che, you can deploy it in your favourite namespace:
+
+```
+$ git clone https://github.com/blues-man/react-redux-realworld-example-app
+$ cd react-redux-realworld-example-app
+```
+
+The demo will create a container on [Quay.io](https://quay.io/repository/bluesman/react-realworld) for each new change on master branch. K8S resources are ready to be used, modify `Ingress` with your ingress domain.
+
+```
+$ kubectl create -f k8s/deployment.yaml
+$ kubectl create -f k8s/service.yaml
+$ kubectl create -f k8s/ingress.yaml
+```
+
+[Demo app](http://react-realword-my-eclipse-che.148.251.9.136.nip.io/)
 
 #### NGINX Conf
 
