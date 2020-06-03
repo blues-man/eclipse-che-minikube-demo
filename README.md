@@ -167,6 +167,9 @@ $ kubectl create -f k8s/ingress.yaml
 Checkout your tested and reviewed [Demo app](http://react-realword-my-eclipse-che.148.251.9.136.nip.io/)
 
 
+![Demo app](demo_app_changes.png)
+
+
 
 #### NGINX Conf
 
