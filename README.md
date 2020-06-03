@@ -2,10 +2,14 @@
 
 This demo is about [Eclipse Che](https://www.eclipse.org/che/) on [Kubernetes](https://kubernetes.io) and it is part of [Kubernetes-IT](https://t.me/kubernetes_it) Telegram Community weekly events of [June 3 2020](https://www.eventbrite.it/e/biglietti-kubernetes-it-sviluppare-su-kubernetes-con-eclipse-che-107109477330#)
 
-Slides are available [here](https://github.com/blues-man/eclipse-che-minikube-demo/blob/master/Eclipse_Che_Rocks.pdf)
-
+A Diagram explaining demo flow:
 
 ![Diagram](Eclipse_Che_Demo_Diagram.png)
+
+
+
+Slides are available [here](https://github.com/blues-man/eclipse-che-minikube-demo/blob/master/Eclipse_Che_Rocks.pdf)
+
 
 # Demo steps
 
