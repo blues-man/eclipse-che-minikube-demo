@@ -136,7 +136,7 @@ Register and login
 
 Demo has been done on Hetzner server exposing Minikube outside via [NGINX Proxy](#nginx-conf) with Websocket support.
 
-Use this [Repo](https://github.com/blues-man/react-redux-realworld-example-app) for Fabric demo
+Use this [Repo](https://github.com/blues-man/react-redux-realworld-example-app) for Factory demo
 
 [![Contribute](https://raw.githubusercontent.com/blues-man/cloud-native-workshop/demo/factory-contribute.svg)](http://che-my-eclipse-che.148.251.9.136.nip.io/factory?url=https://github.com/blues-man/react-redux-realworld-example-app/)
 
