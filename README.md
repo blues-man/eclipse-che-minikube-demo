@@ -1,5 +1,11 @@
 # Eclipse Che demo on Minikube
 
+This demo is part of [Kubernetes-IT](https://t.me/kubernetes_it) Telegram Community weekly events of [June 3 2020](https://www.eventbrite.it/e/biglietti-kubernetes-it-sviluppare-su-kubernetes-con-eclipse-che-107109477330#)
+
+Slides are available [here](https://github.com/blues-man/eclipse-che-minikube-demo/blob/master/Eclipse_Che_Rocks.pdf)
+
+## Demo steps
+
 Download and start latest [Minikube](https://github.com/kubernetes/minikube/releases/tag/v1.11.0)
 
 ## Enable OLM addon
@@ -126,7 +132,9 @@ Register and login
 ![Login](https://miro.medium.com/max/968/0*XMW3jIOgG9Vxmf5s.)
 
 
-### Demo!
+### Demo
+
+Demo has been done on Hetzner server exposing Minikube outside via NGINX Proxy with Websocket support.
 
 Use this [Repo](https://github.com/blues-man/react-redux-realworld-example-app) for Fabric demo
 
