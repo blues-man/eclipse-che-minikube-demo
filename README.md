@@ -15,7 +15,7 @@ Due a [bug](https://github.com/eclipse/che/issues/16545) with Minikube `storage-
 
 Apply workaround
 ```
-$ kubectl create -f storageclass.yaml
+$ kubectl create -f storageclass_and_volumes.yaml
 ```
 
 #### Storage-provisioner-gluster
