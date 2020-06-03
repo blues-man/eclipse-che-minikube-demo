@@ -4,7 +4,7 @@ This demo is part of [Kubernetes-IT](https://t.me/kubernetes_it) Telegram Commun
 
 Slides are available [here](https://github.com/blues-man/eclipse-che-minikube-demo/blob/master/Eclipse_Che_Rocks.pdf)
 
-## Demo steps
+# Demo steps
 
 Download and start latest [Minikube](https://github.com/kubernetes/minikube/releases/tag/v1.11.0)
 
