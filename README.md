@@ -1,6 +1,6 @@
 # Eclipse Che demo on Minikube
 
-This demo is part of [Kubernetes-IT](https://t.me/kubernetes_it) Telegram Community weekly events of [June 3 2020](https://www.eventbrite.it/e/biglietti-kubernetes-it-sviluppare-su-kubernetes-con-eclipse-che-107109477330#)
+This demo is about [Eclipse Che](https://www.eclipse.org/che/) on [Kubernetes](https://kubernetes.io) and it is part of [Kubernetes-IT](https://t.me/kubernetes_it) Telegram Community weekly events of [June 3 2020](https://www.eventbrite.it/e/biglietti-kubernetes-it-sviluppare-su-kubernetes-con-eclipse-che-107109477330#)
 
 Slides are available [here](https://github.com/blues-man/eclipse-che-minikube-demo/blob/master/Eclipse_Che_Rocks.pdf)
 
@@ -60,7 +60,7 @@ eclipse-che.v7.13.2   Eclipse Che   7.13.2               Succeeded
 
 ## Install Eclipse Che CR
 
-Modify CheCluster CR with your ingress domain (e.g. `minikibe ip`.nip.io) and your favourite settings
+Modify CheCluster CR with your ingress domain (e.g. `minikube ip`.nip.io) and your favourite settings
 
 ```
 apiVersion: org.eclipse.che/v1
@@ -165,7 +165,7 @@ Checkout your tested and reviewed [Demo app](http://react-realword-my-eclipse-ch
     server {
         listen       80 default_server;
         listen       [::]:80 default_server;
-        server_name  che-my-eclipse-che.148.251.9.136.nip.io;
+        server_name  che-my-eclipse-che.<YOUR-EXTERNAL-IP>.nip.io;
         root         /usr/share/nginx/html;
 
         include /etc/nginx/default.d/*.conf;
