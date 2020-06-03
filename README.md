@@ -13,7 +13,8 @@ Demo flow:
 * Made changes to the code, tested locally with embedded browser into IDE
 * Pushed changes on Quay.io Registry which triggered a new build of container image from Dockerfile
 * Deployed k8s resources on Minikube
-
+<br/>
+<br/>
 
 ![Diagram](Eclipse_Che_Demo_Diagram.png)
 
