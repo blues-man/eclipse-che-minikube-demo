@@ -4,6 +4,9 @@ This demo is about [Eclipse Che](https://www.eclipse.org/che/) on [Kubernetes](h
 
 Slides are available [here](https://github.com/blues-man/eclipse-che-minikube-demo/blob/master/Eclipse_Che_Rocks.pdf)
 
+
+![Diagram](Eclipse_Che_Demo_Diagram.png)
+
 # Demo steps
 
 Download and start latest [Minikube](https://github.com/kubernetes/minikube/releases/tag/v1.11.0)
@@ -158,6 +161,8 @@ $ kubectl create -f k8s/ingress.yaml
 ```
 
 Checkout your tested and reviewed [Demo app](http://react-realword-my-eclipse-che.148.251.9.136.nip.io/)
+
+
 
 #### NGINX Conf
 
